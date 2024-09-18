@@ -11,7 +11,7 @@ CREATE TABLE prenotazioni (
 );
 
 CREATE TABLE auto_disponibili(
-	id INT AUTO_INCREMENT PRIMARY KEY,
+    id INT AUTO_INCREMENT PRIMARY KEY,
     marca varchar(30) not null,
     modello varchar(30) not null,
     prezzo int not null
