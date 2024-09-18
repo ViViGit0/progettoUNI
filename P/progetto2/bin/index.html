@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noleggio Auto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Noleggio Auto</h1>
+    <form action="CarRentalServlet" method="post">
+        <label for="car">Scegli l'auto:</label>
+        <select id="car" name="car">
+            <option value="Fiat500" data-price="30">Fiat 500 (€30 al giorno)</option>
+            <option value="AudiA3" data-price="50">Audi A3 (€50 al giorno)</option>
+            <option value="BMWX1" data-price="70">BMW X1 (€70 al giorno)</option>
+            <option value="TeslaModel3" data-price="100">Tesla Model 3 (€100 al giorno)</option>
+            <option value="MercedesBenz" data-price="90">Mercedes Benz (€90 al giorno)</option>
+        </select>
+        
+        <label for="start_date">Data di Inizio:</label>
+        <input type="date" id="start_date" name="start_date" required>
+        
+        <label for="end_date">Data di Fine:</label>
+        <input type="date" id="end_date" name="end_date" required>
+        
+        <label for="total_cost">Costo totale:</label>
+        <input type="text" id="total_cost" name="total_cost" readonly>
+        
+        <button type="button" onclick="calculateTotal()">Calcola Costo</button>
+        <button type="submit">Conferma Prenotazione</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
