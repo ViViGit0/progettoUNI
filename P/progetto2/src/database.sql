@@ -9,6 +9,7 @@ CREATE TABLE prenotazioni (
     data_fine DATE not null,
     costo_totale DOUBLE
 );
+
 CREATE TABLE auto_disponibili(
 	id INT AUTO_INCREMENT PRIMARY KEY,
     marca varchar(30) not null,
